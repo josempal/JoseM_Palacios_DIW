@@ -1,0 +1,149 @@
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, nav, main, footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+header {
+    text-align: center;
+    background-color: #2b3446;
+    border-radius: 5px;
+}
+
+h1, h2{
+    color: whitesmoke;
+}
+
+header h1 {
+
+    padding:10px;
+}
+
+header h2 {
+
+    padding-bottom: 0.7em;
+}
+
+nav {
+    text-align: center;
+    background-color: #4a5a7b;
+    border-radius: 5px;
+}
+
+nav img {
+    width: 3%;
+    float: left;
+    position: relative;
+    left: 20px;
+    top: 3px;
+}
+
+nav ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+
+nav ul li {
+   
+    display: inline;
+    padding: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px
+}
+
+nav ul li:hover {
+
+    background-color: #6b81ad;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+}
+
+main {
+
+    background-color: #f3f1d5;
+    text-align: center;
+}
+
+abbr {
+
+    text-decoration: none;
+}
+
+main img {
+
+    background-image: #f3f1d5 ;
+    margin-top: 3%;
+    float: left;
+    margin-left: 0.4rem;
+}
+
+#parrafo1 {
+
+    padding-left:3%;
+    padding-top: 5%;
+}
+
+section table {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#parrafo2 {
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+section table tbody tr:nth-child(2),
+section table tbody tr:nth-child(4),
+section table tbody tr:nth-child(6),
+section table tbody tr:nth-child(8) {
+
+    background-color: #ddd;
+}
+
+
+#parrafo2 ul {
+
+    list-style: none;
+    margin-top: 30px;
+    padding: 15px;
+    
+}
+
+#parrafo2 ul li {
+
+    display: inline;
+    padding: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px    
+}
+
+#parrafo2 ul li a {
+
+    text-decoration: none;
+    color: black;
+}
+
+#parrafo2 ul li a:hover {
+
+    color:#ccc;
+}
+
+footer {
+
+    background-color: #4a5a7b;
+}
