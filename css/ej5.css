@@ -17,7 +17,7 @@ header {
     border-radius: 5px;
 }
 
-header h1,
+h1,
 h2 {
     color: whitesmoke;
 }
@@ -72,62 +72,29 @@ main {
     text-align: center;
 }
 
-abbr {
-    text-decoration: none;
+.ejercicio {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.7em;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
 }
 
-main img {
-    background-image: #f3f1d5;
-    margin-top: 3%;
-    float: left;
-    margin-left: 0.4rem;
+.ejercicio h1 {
+    color: #000;
+    font-family: Georgia 32px, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
 }
 
-#parrafo1 {
-    padding-left: 3%;
-    padding-top: 5%;
+.ejercicio h2 {
+    color: #000;
+    font-family: Georgia 24px, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
-section table {
-    margin: 0 auto;
-    text-align: center;
-}
-
-#parrafo2 {
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-section table tbody tr:nth-child(2),
-section table tbody tr:nth-child(4),
-section table tbody tr:nth-child(6),
-section table tbody tr:nth-child(8) {
-    background-color: #ddd;
-}
-
-#parrafo2 ul {
-    list-style: none;
-    margin-top: 30px;
-    padding: 15px;
-}
-
-#parrafo2 ul li {
-    display: inline;
-    padding: 5px;
-    padding: 10px;
-    margin: 10px;
-    font-size: 18px
-}
-
-#parrafo2 ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-#parrafo2 ul li a:hover {
-    color: #ccc;
-}
-
-footer {
-    background-color: #4a5a7b;
+.ejercicio ul li strong {
+    font-weight: normal;
 }

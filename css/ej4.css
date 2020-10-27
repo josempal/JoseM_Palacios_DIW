@@ -17,7 +17,7 @@ header {
     border-radius: 5px;
 }
 
-header h1,
+h1,
 h2 {
     color: whitesmoke;
 }
@@ -72,62 +72,16 @@ main {
     text-align: center;
 }
 
-abbr {
+.enlaces a {
+    color: #CC0000;
+}
+
+.enlaces a:hover {
     text-decoration: none;
+    background-color: #CC0000;
+    color: #fff;
 }
 
-main img {
-    background-image: #f3f1d5;
-    margin-top: 3%;
-    float: left;
-    margin-left: 0.4rem;
-}
-
-#parrafo1 {
-    padding-left: 3%;
-    padding-top: 5%;
-}
-
-section table {
-    margin: 0 auto;
-    text-align: center;
-}
-
-#parrafo2 {
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-section table tbody tr:nth-child(2),
-section table tbody tr:nth-child(4),
-section table tbody tr:nth-child(6),
-section table tbody tr:nth-child(8) {
-    background-color: #ddd;
-}
-
-#parrafo2 ul {
-    list-style: none;
-    margin-top: 30px;
-    padding: 15px;
-}
-
-#parrafo2 ul li {
-    display: inline;
-    padding: 5px;
-    padding: 10px;
-    margin: 10px;
-    font-size: 18px
-}
-
-#parrafo2 ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-#parrafo2 ul li a:hover {
+.enlaces a:visited {
     color: #ccc;
-}
-
-footer {
-    background-color: #4a5a7b;
 }
