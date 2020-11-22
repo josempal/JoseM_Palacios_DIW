@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Oswald:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+
+    font-family: 'Arimo', sans-serif;
+    width: 100%;
+    height: 100%;
+    color: #DDD;
+}
+
+header, main, footer {
+
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+abbr {
+
+    text-decoration: none;
+}
+li {
+    
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-sec {
+
+    background-color: #4a5a7b;
+    height: 30px;
+    padding-left: 2vw;
+}
+
+.nav-sec nav ul li a:hover{
+
+    color: #2b3446;;
+}
+
+header nav a {
+    color: #ddd;
+}
+
+footer nav ul li a {
+
+    color: #ddd;
+}
+
+.footer footer span a {
+
+    color: #ddd;
+}
+
+.nav-sec nav ul li a i {
+
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.nav {
+
+    background-color: rgb(43, 52, 70);
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+.nav ul li {
+
+    border-left: 2px solid #DDD;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    line-height: 200%;
+
+}
+
+.nav nav ul li a {
+
+    text-align: center; 
+    cursor: pointer; 
+    display: table-cell;
+    transition: color 1s ease-in-out;
+    transition: 1s ease-in;
+}
+
+.nav nav ul li a:hover {
+    
+    transform: perspective(150px) rotateY(30deg);
+    color: #4a5a7b;
+}
+
+#sec-prin {
+
+    background: url(../img/fondo-sec-prin.jpg) no-repeat fixed center;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: #DDD;
+}
+
+.footer {
+
+    background-color: rgb(43, 52, 70);
+    text-align: center;
+    color: #DDD;
+    padding: 1vw;
+}
+
+.footer footer h3 {
+
+    display: inline-block;
+    padding-right: 3vw;
+}
+
+footer nav .redes {
+
+    display: inline;
+    padding: 1vh;;
+}
+
+footer nav .redes li a i {
+    margin-top: 2vh;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:480px) {
+
+    
+    #activar ~ .desplegable {
+
+        display: none;
+        overflow: hidden;
+        background: #2b3446;
+        color: #fff;
+    }
+
+    #activar:checked ~ .desplegable {
+
+        display: inline-block;
+    }
+
+    #activar {
+        display: none;
+    }
+
+    .inputlabel {
+
+        display: table-cell;
+        padding: 8px 10px;  
+    }
+
+    .footer footer h3 {
+
+        display: block;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:960px) {
+
+    .nav nav input {
+        display: none;
+    }
+    
+    .nav nav label {
+    
+        display: none;
+    }
+}
+
+@media screen and (min-width:961px) {
+
+    .nav nav input {
+        display: none;
+    }
+
+    .nav nav label {
+
+        display: none;
+    }    
+}

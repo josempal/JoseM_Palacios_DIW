@@ -1,0 +1,45 @@
+
+h1 {
+    color: teal;
+}
+
+main h2, caption, a em {
+    color: blue;
+}
+
+.especial {
+    color: purple;
+}
+
+strong, a {
+    color: red;
+}
+.destacado, table .especial, td strong {
+    color: orange;
+}
+
+#adicional {
+    color: olive;
+}
+
+#especial {
+    color: fuchsia;
+}
+
+#adicional a {
+    color: green;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+td {
+    color: green;
+}
+
+th {
+    color: red;
+}

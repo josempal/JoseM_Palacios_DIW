@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Oswald:wght@300&display=swap');
+
+.container {
+
+    text-align: center;
+}
+
+#sec-prin {
+
+    background: url(../img/fondo-sec-prin.jpg) no-repeat fixed center;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: #DDD;
+}
+
+@keyframes escalado {
+
+    0% {
+        transform: scale3d(0.2, 0.2, 1.1)
+    }
+
+    100% {
+        transform: scale3d(1,1,1)
+    }
+}
+
+#sec-prin img {
+
+    border-radius: 50%;
+    animation-name: escalado;
+    animation-duration: 3.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+}
+
+#sec-prin img:hover {
+
+    animation: escalado;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#cont-sec {
+
+    background-color: #4a5a7b;
+}
+
+#cont-sec .tecnologias .img-tecn img {
+
+    border-radius: 25%;
+}
+
+#cont-sec .tabla p {
+
+    font-family: 'Oswald', sans-serif;
+}
+#cont-sec .tabla table tbody tr:nth-child(2),
+#cont-sec .tabla table tbody tr:nth-child(4),
+#cont-sec .tabla table tbody tr:nth-child(6),
+#cont-sec .tabla table tbody tr:nth-child(8) {
+    background-color: #2b3446;
+}
+
+/* Móviles */
+@media screen and (max-width:480px) {
+
+    #sec-prin {
+
+        text-align: center;
+        padding: 2vh;
+    }
+
+    #cont-sec {
+
+        text-align: center;
+        padding: 3vh;
+    }
+
+    #cont-sec .sec-secun .parrafo2 h2 {
+
+        padding-bottom: 5px;
+    }
+
+    #cont-sec .tabla p {
+
+        font-size: 20px;
+    }
+
+    #cont-sec .tabla table thead {
+
+        background-color: #2b3446;
+    }
+   
+
+    #cont-sec .tecnologias {
+
+        display: inline-block;
+    }
+
+    #cont-sec .tecnologias .img-tecn {
+
+        display: inline-block;
+        padding: 8vw;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width:481px) and (max-width:960px) {
+
+    .contenedor #sec-prin .imagen img {
+    
+        width: 350px;
+        height: 350px;
+    }
+    .contenedor #sec-prin {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contenedor #sec-prin div {
+        
+        width: 50%;
+        height: 100%;
+        padding: 2%;
+    }
+
+    #cont-sec {
+
+        text-align: center;
+        padding: 3vh;
+    }
+
+    #cont-sec .tabla p {
+
+        font-size: 20px;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    #cont-sec .tabla {
+
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #cont-sec .tabla table thead {
+
+        background-color: #2b3446;
+    }
+   
+    #tec-tit {
+
+        font-size: 1.5em;
+        margin-bottom: 3vh;
+    }
+
+    .tecnologias {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    .tecnologias .img-tecn {
+
+        width: 25%;
+    }
+}
+
+/* PC */
+@media screen and (min-width:961px) {
+
+    .contenedor #sec-prin {
+
+        display: grid;
+        grid-template-columns: auto auto;
+        align-content: center;
+        padding: 8vh;
+        align-items: center;
+        column-gap: 8vw;
+    }
+
+    #cont-sec {
+
+        text-align: center;
+        padding: 8vh;
+        grid-column-gap: 14px;
+        margin-top: 3vh;
+    }
+
+    #cont-sec .fila {
+
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 5vw;
+        align-items: center;
+    }
+
+    #cont-sec .tabla p {
+
+        font-size: 2rem;
+    }
+
+    #cont-sec .tabla table {
+
+        width: 100%;
+    }
+
+    #cont-sec .tabla table thead {
+
+        background-color: #2b3446;
+    }
+   
+    #tec-tit {
+
+        font-size: 1.8rem;
+    }
+
+    .tecnologias {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 10vh;
+    }
+
+    .tecnologias .img-tecn img {
+
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios CSS J. Manuel Palacios</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styles.common.css">
+    <link rel="stylesheet" href="css/styles.index.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-sec">
+            <nav>
+                <ul class="redes">
+                    <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://es-es.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=es"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://es.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav">
+            <nav>
+                <input id="activar" name="activar" type="checkbox">
+                <label class="inputlabel" for="activar"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></label>
+                <div class="desplegable">
+                    <ul>
+                        <li><a class="menu inicio" href="index.html" data-title="Inicio">
+                                <span>Inicio</span>
+                            </a></li>
+                        <li><a class="menu ejercicios" href="ejercicios.html" data-title="Ejercicios">
+
+                                <span>Ejercicios</span>
+
+                            </a></li>
+                        <li><a class="menu contactar" href="contactar.html" data-title="Contactar">
+
+                                <span>Contactar</span>
+
+                            </a></li>
+                        <li><a class="menu github" href="https://github.com/josempal/JoseM_Palacios_DIW" data-title="Github">
+
+                                <span>Github</span>
+
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenedor">
+        <main>
+            <section id="sec-prin">
+                <div class="imagen">
+                    <img src="img/foto-perfil(1).jpg" alt="foto-perfil"
+                        style="max-width: 100%; height: 400px; width: 400px;">
+                </div>
+                <div id="parrafo1">
+                    <p>
+                    <h1>Bienvenido al sitio web de José Manuel Palacios López</h1>
+                    Este espacio ha sido diseñado para la
+                    práctica de la asignatura de <abbr title="Diseño de Interfaces Web">DIW</abbr>. Este módulo
+                    forma parte del currículo de 2º año del <abbr title="Ciclo Formativo Grado Superior">CFGS</abbr>
+                    <em>Desarrollo de Aplicaciones Web.</em> El ciclo posibilita al estudiante los conocimientos
+                    para
+                    acceder al mercado como
+                    desarrollador y programador de aplicaciones en entornos web.</p><br />
+
+                    <p> El centro del que procede la petición de creación de esta web es el <abbr
+                            title="Instituto Enseñanza Secundaria">
+                            I.E.S.</abbr> Alixar (Castilleja de la Cuesta, Sevilla). Este es el listado de módulos
+                        de
+                        dicho ciclo formativo para el curso académico 2020/2021:</p> <br />
+                </div>
+            </section>
+
+            <div id="cont-sec">
+                <!-- Parrafo para alargar la página y usarlo como elemento responsivo -->
+                <div class="fila">
+                    <section class="sec-secun">
+                        <div class="parrafo2">
+                            <p>
+                            <h2>Lorem ipsum dolor sit amet</h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est commodi, quidem mollitia
+                            recusandae
+                            dolorum totam. Nobis cum non natus expedita reprehenderit enim tempora dolore, minima
+                            consectetur aliquid autem nostrum quis.
+                            <br><br>
+                            Debitis, expedita ab? Doloremque nobis unde neque, incidunt hic repellendus atque voluptatum
+                            quasi pariatur! Omnis nulla impedit accusantium, vero quod unde amet libero cum inventore
+                            quaerat quae quibusdam illo nam.
+                            <br><br>
+                            Laborum iste voluptatem eveniet quaerat dolore enim exercitationem totam culpa ullam dicta
+                            recusandae laudantium blanditiis dolorem cupiditate, repudiandae, corporis doloremque veniam
+                            adipisci laboriosam, repellat modi? Blanditiis maiores modi fugiat. Eos?
+                            Blanditiis quae eaque quas iste quasi praesentium illo enim assumenda. Sit quam totam
+                            laudantium
+                            eaque explicabo maiores blanditiis, incidunt ex reiciendis placeat sunt, optio adipisci a ab
+                            molestiae aspernatur delectus.
+                            <br><br>
+                            Reiciendis suscipit nemo molestias optio veniam repudiandae non nihil dolor quae beatae!
+                            Molestiae, expedita. Ut eaque exercitationem placeat totam recusandae maiores iusto quaerat
+                            repellat rem est, eos accusantium, quod nisi.
+                            </p>
+                            <br><br>
+                        </div>
+                    </section>
+                    <section class="tabla" style="overflow-x: auto;">
+                        <p>Este es el listado de módulos de dicho ciclo formativo para el curso académico 2020/2021:</p>
+                        <br><br>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Módulo</th>
+                                    <th>H.SEM.</th>
+                                    <th>H.TOT.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Desarrollo web en entorno cliente</td>
+                                    <td>6</td>
+                                    <td>126</td>
+                                </tr>
+                                <tr>
+                                    <td>Desarrollo web en entorno servidor</td>
+                                    <td>8</td>
+                                    <td>168</td>
+                                </tr>
+                                <tr>
+                                    <td>Despliegue de aplicaciones web</td>
+                                    <td>3</td>
+                                    <td>63</td>
+                                </tr>
+                                <tr>
+                                    <td>Diseño de interfaces WEB</td>
+                                    <td>6</td>
+                                    <td>126</td>
+                                </tr>
+                                <tr>
+                                    <td>Empresa e iniciativa emprendedora</td>
+                                    <td>4</td>
+                                    <td>84</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Formación en centros de trabajo</td>
+                                    <td>0</td>
+                                    <td>370</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Horas de libre configuración</td>
+                                    <td>3</td>
+                                    <td>63</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Proyecto de desarrollo de aplicaciones web</td>
+                                    <td>0</td>
+                                    <td>40</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                <br><br><br>
+                <section class="sec-secun2">
+                    <p id="tec-tit">Tecnologías aprendiendo actualmente:</p>
+                    <div class="tecnologias">
+                        <div class="img-tecn"><img src="img/js.png" alt="javascript"
+                                style="max-width: 100%; width: 100px; height: 100px;"></div>
+                        <div class="img-tecn"><img src="img/java.png" alt="java"
+                                style="max-width: 100%; width: 100px; height: 100px;"></div>
+                        <div class="img-tecn"><img src="img/css.png" alt="css"
+                                style="max-width: 100%; width: 100px; height: 100px;"></div>
+                        <div class="img-tecn"><img src="img/bootstrap.png" alt="bootstrap"
+                                style="max-width: 100%; width: 100px; height: 100px;"></div>
+                    </div>
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <h3>José Manuel Palacios López &copy;</h3>
+            <span><a href="#">Aviso Legal</a></span>
+            <nav>
+                <ul class="redes">
+                    <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://es-es.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=es"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://es.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.ejercicio {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.7em;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+.ejercicio h1 {
+    color: #000;
+    font-family: Georgia 32px, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+
+.ejercicio h2 {
+    color: #000;
+    font-family: Georgia 24px, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.ejercicio ul li strong {
+    font-weight: normal;
+}

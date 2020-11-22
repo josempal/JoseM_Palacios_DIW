@@ -1,0 +1,13 @@
+.enlaces a {
+    color: #CC0000;
+}
+
+.enlaces a:hover {
+    text-decoration: none;
+    background-color: #CC0000;
+    color: #fff;
+}
+
+.enlaces a:visited {
+    color: #ccc;
+}
