@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Libre+Baskerville&display=swap');
+
+.container-fluid {
+
+    background-color: #f8f7f3;
+}
+
+main {
+
+    margin-top: 5rem;
+}
+
+.h2 {
+
+    font-family: 'Bitter', serif;
+    color:  #966c59;
+}
+
+section .h3 {
+
+    border-bottom: 2.5px solid #ece4b3;
+    font-family: 'Bitter', serif;
+    color:  #966c59;
+}
+
+section .badge {
+
+    background-color: #966c59;
+    color: whitesmoke;
+}
+
+.button-us {
+
+    background-color: #ece4b3;
+}
+
+.list-group li {
+
+    background-color: #f8f7f3;
+}
