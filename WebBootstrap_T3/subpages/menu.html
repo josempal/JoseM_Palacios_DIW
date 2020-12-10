@@ -15,6 +15,11 @@
 
             background-color: #f8f7f3;
         }
+
+        .btn {
+
+            padding-left: 0;
+        }
     </style>
 </head>
 
@@ -92,15 +97,35 @@
                         INFUSIONES</h2>
                     <ul class="list-group list-group-flush">
                         <h5 class="h5 mb-2 mt-5 mt-lg-0">Bebidas</h5>
-                        <li class="list-group-item"><button type="button" class="btn"
-                                data-container="body" data-toggle="popover" data-placement="top"
+                        <li class="list-group-item">
+                            <button type="button" class="btn" data-container="body" data-toggle="popover"
+                                data-placement="top"
                                 data-content="Té negro Darjeeling de la India con aceite de bergamota">
                                 Earl Grey
-                            </button></li>
-                        <li class="list-group-item">Pakistaní</li>
-                        <li class="list-group-item">Moruno</li>
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <button type="button" class="btn" data-container="body"
+                                data-toggle="popover" data-placement="top"
+                                data-content="Té negro, canela, vainilla, naranja de Sevilla, cardamomo">
+                                Pakistaní
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <button type="button" class="btn text-left" data-container="body"
+                                data-toggle="popover" data-placement="top"
+                                data-content="Té verde Gunpowder, menta fresca, hierbabuena de Túnez">
+                                Moruno
+                            </button>
+                        </li>
                         <li class="list-group-item">Pai-mu-tan</li>
-                        <li class="list-group-item">Chai</li>
+                        <li class="list-group-item">
+                            <button type="button" class="btn text-left" data-container="body"
+                                data-toggle="popover" data-placement="top"
+                                data-content="Té verde Gunpowder, menta fresca, hierbabuena de Túnez">
+                                Chai
+                            </button>
+                        </li>
                         <li class="list-group-item">Rooibos</li>
                         <li class="list-group-item">Tila</li>
                     </ul>
@@ -142,6 +167,11 @@
 
     <script src="../js/jquery-3.5.1.slim.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 
 </html>
