@@ -1,0 +1,72 @@
+//// @access public
+//// @author Jose Manuel Palacios
+
+/// @group Posicionamiento
+/// 
+@mixin flex-variant($display, $direction: false, $align: false, $justify: false, $wrap: false) {
+    
+    display: $display;
+  
+    @if $direction {
+      flex-direction: $direction;
+    }
+  
+    @if $align {
+      align-items: $align;
+    }
+  
+    @if $justify {
+      justify-content: $justify;
+    }
+  
+    @if $wrap {
+      flex-wrap: $wrap;
+    }
+  
+    // fix
+    & > * {
+      min-width: 0;
+    }
+  }
+  
+@mixin flex($direction: false, $align: false, $justify: false, $wrap: false) {
+    @include flex-variant(flex, $direction: $direction, $align: $align, $justify: $justify, $wrap: $wrap);
+  }
+  @mixin inline-flex($direction: false, $align: false, $justify: false, $wrap: false) {
+    @include flex-variant(inline-flex, $direction: $direction, $align: $align, $justify: $justify, $wrap: $wrap);
+  } 
+
+
+/// @group Posicionamiento
+/// Centrar elementos
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/// @group Estilos
+/// Color de la letra y fondo
+/// @parameter {color} $foreground -- Color de la letra
+/// @parameter {color} $backcground -- Color del fondon
+@mixin content-style($foreground, $background) {
+
+  color: $foreground;
+  background: $background;
+}
+
+/// @group Responsive
+/// Indica el breakpoint a partir del cual aplicar la siguientes reglas
+/// @parameter {breakpoint} $bq-breakpoint -- Breakpoint a usar
+/// @parameter {map} $bq-breakpoints -- Mapa de los breakpoints
+@mixin breakpoint($bq-breakpoint, $bq-breakpoints: $breakpoints) {
+  @if map-has-key($bq-breakpoints, $bq-breakpoint) {
+    $bq-breakpoint: map-get($bq-breakpoints, $bq-breakpoint);
+  }
+  
+  @media screen and (min-width: #{$bq-breakpoint}) {
+    @content;
+  }
+}
+

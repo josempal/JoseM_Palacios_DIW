@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fraunces&family=Raleway:ital@1&display=swap");
+/* Centrar textos */
+.center-text {
+  text-align: center;
+}
+
+/* Centrar contenedores */
+.center-container {
+  margin: 0 auto;
+}
+
+/* Clases para añadir padding a los elementos */
+.p-0 {
+  padding: 0rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  color: #ddd;
+}
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+li {
+  list-style: none;
+}
+
+section, footer {
+  font-family: "Raleway", sans-serif;
+  color: #110e0b;
+}
+
+.header {
+  height: 12vh;
+  color: #ddd;
+  background: #182130;
+  font-family: "Fraunces", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Permite centrar el logo y enlaces */
+}
+
+.header > * {
+  min-width: 0;
+}
+
+@media screen and (max-height: 756px) {
+  .header {
+    height: 20vh;
+  }
+}
+
+.header .nav-social {
+  width: 18.75%;
+  border-right: 0.15rem solid #ddd;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .nav-social ul {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header .nav-social ul li {
+  display: inline-block;
+}
+
+.header .navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 62.5%;
+  font-size: 5vw;
+}
+
+.header .navigator > * {
+  min-width: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .header .navigator {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .navigator {
+    font-size: 2.8vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header .navigator {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .navigator {
+    font-size: 1.8rem;
+  }
+}
+
+.header .navigator .logo {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 1rem;
+}
+
+.header .separator {
+  width: 18.75%;
+}
+
+.section-1 {
+  height: 80vh;
+  position: relative;
+  z-index: 1;
+}
+
+.section-1 .background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../img/bar.jpeg") center center;
+  opacity: .6;
+  width: 100%;
+  height: 100%;
+}
+
+.section-1 .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#182130), to(#2079b0));
+  background: linear-gradient(to bottom, #182130, #2079b0);
+  border-radius: 28px;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+          box-shadow: 6px 5px 24px #666666;
+  width: 10rem;
+  height: 5rem;
+  color: inherit;
+}
+
+.section-1 .btn:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.section-1 .front-text {
+  font-size: 1.5rem;
+  font-weight: 1500;
+  color: #182130;
+}
+
+.section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  width: 30%;
+}
+
+.section-2 > * {
+  min-width: 0;
+}
+
+.section-2 div {
+  display: block;
+  clear: both;
+}
+
+.section-5 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.section-5 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .section-5 iframe {
+    height: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-5 iframe {
+    height: 60%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

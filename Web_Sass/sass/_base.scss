@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.container {
+
+    color: $color-primary;
+}
+
+a {
+
+    text-decoration: none;
+    color: $color-primary;
+}
+
+li {
+
+    list-style: none;
+}
+
+section, footer {
+
+    font-family: $main-font;
+    color: $color-primary-dark;
+}

@@ -1,0 +1,9 @@
+//// @access public
+//// @author Jose Manuel Palacios
+
+/// @group Posicionamiento
+/// @parameter {float} $col -- Número de columnas
+/// @parameter {float} $total -- Número de columnas totales
+@function col-width($col,$total) {
+  @return percentage($col/$total);
+}

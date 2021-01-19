@@ -1,0 +1,39 @@
+//// @access public
+//// @author Jose Manuel Palacios
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Raleway:ital@1&display=swap');
+
+/// Tipografía
+/// @group Tipografia
+/// @type Fuente
+$heading-font: 'Fraunces', serif;
+
+/// @group Tipografia
+/// @type Fuente
+$main-font: 'Raleway', sans-serif;
+
+/// Colores principales
+/// @group Colores-principales
+/// @type Color
+$color-primary: #ddd;
+
+/// @group Colores-principales
+/// @type Color
+$color-primary-bg: #182130;
+/// @group Colores-principales
+/// @type Color
+$color-primary-dark: #110e0b;
+
+/// @group Colores-secundarios
+/// @type Color
+$color-secondary: #5a5343;
+
+/// @group Mapas
+/// @type Map
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+)

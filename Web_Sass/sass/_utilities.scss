@@ -1,0 +1,17 @@
+/* Centrar textos */ 
+.center-text {
+
+    text-align: center;
+}
+
+/* Centrar contenedores */
+.center-container {
+
+    margin: 0 auto;
+}
+/* Clases para añadir padding a los elementos */
+@for $i from 0 through 4 {
+    .p-#{$i} {
+        padding: (0.5*$i)+rem;
+    }
+}
